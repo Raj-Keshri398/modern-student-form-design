@@ -3,7 +3,7 @@ A clean and responsive student registration form built using HTML and CSS. The d
 
 
 
-Modern Student Form Design
+Modern Student Form Design  
 
 Student Registration Form created using HTML & CSS with Responsive Code.
 This project focuses on a modern layout, clean design, and mobile-friendly structure.
