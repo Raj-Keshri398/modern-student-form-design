@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">Modern Registration Form</div>
+
+    <!-- here us the start our from-->
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+
+        <!-- using section to add padding of the form -->
+        <section class="content">
+
+            <!-- using from tag for submit and reset button-->
+            <form>
+                <!-- row div is use for maintain the many element in a horizontal line-->
+                <div class="row">
+                    <!-- col div is use for maintain equal space + alignment of the elements-->
+                    <div class="col">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter first name" />
+                    </div>
+                    <div class="col">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter last name" />
+                    </div>
+                </div>
+
+                <!-- date of birth -->
+                <div class="row rows">
+                    <div class="col cols">
+                        <label>Date of Birth</label>
+                        <select>
+                            <option>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+
+                    <div class="col cols">
+                        <label>&nbsp;</label>
+                        <select>
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </div>
+
+                    <div class="col cols">
+                        <label>&nbsp;</label>
+                        <select>
+                            <option>Year</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- personal contact details -->
+                <div class="row">
+                    <div class="col">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter email address" />
+                    </div>
+                    <div class="col">
+                        <label>Mobile</label>
+                        <input type="text" placeholder="Enter 10_digit mobile number" />
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="col">
+                    <label>Gender</label>
+                    <div class="options-group">
+                        <label class="option-item">
+                            <input type="radio" name="gender" value="male"> Male
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </div>
+                </div>
+            
+            
+                <!-- Address -->
+                <div class="col">
+                    <label>Address</label>
+                    <input type="text" placeholder="Enter full address" />
+                </div>
+                        
+                <div class="row">
+                    <div class="col">
+                        <label>City</label>
+                        <input type="text" placeholder="Enter city" />
+                    </div>
+                    <div class="col">
+                        <label>PIN Code</label>
+                        <input type="number" placeholder="Enter 6-digit PIN code" />
+                    </div>
+                    <div class="col">
+                        <label>State</label>
+                        <input type="text" placeholder="Enter state" />
+                    </div>
+                </div>
+
+                <!-- country -->
+                <label>Country</label>
+                <select>
+                    <option>Select Country</option>
+                    <option value="india">India</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bhutan">Bhutan</option>
+                </select>
+            
+                <!-- hobbies -->
+                <!-- here inside the col div using options-group-checkbox div to maintain the gap and spacing of the labels -->
+                <div class="col">
+                    <label>Hobbies</label>
+                    <div class="options-group-checkbox">
+                        <label class="option-item">
+                            <input type="checkbox" name="hobby" value="drawing"> Drawing
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="hobby" value="singing"> Singing
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="hobby" value="dancing"> Dancing
+                        </label>
+                    </div>
+                    <div class="options-group-checkbox">
+                        <label class="option-item">
+                            <input type="checkbox" name="hobby" value="sketching"> Sketching
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="hobby" value="others"> Others
+                        </label>
+                    </div>
+                </div>
+                
+                <!--Qualifcication-->
+                <div class="col">
+                    <label>Qualification</label>
+                    <table>
+                        <!-- header of the table there is no space and element collaps to each other -->
+                        <tr>
+                            <th>Sl. No</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+
+                        <!-- write the data and maintain the space between one input box to another -->
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" name="board_x"></td>
+                            <td><input type="number" name="percent_x"></td>
+                            <td><input type="number" name="year_x"></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" name="board_xii"></td>
+                            <td><input type="number" name="percent_xii"></td>
+                            <td><input type="number" name="year_xii"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="board_grad"></td>
+                            <td><input type="number" name="percent_grad"></td>
+                            <td><input type="number" name="year_grad"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" name="board_master"></td>
+                            <td><input type="number" name="percent_master"></td>
+                            <td><input type="number" name="year_master"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Course applied for -->
+                <!-- here is using same div done as in gender -->
+                <div class="col">
+                    <label>Courses Applied For</label>
+                    <div class="options-group">
+                        <label class="option-item">
+                            <input type="radio" name="course" value="bca"> BCA
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="course" value="bcom"> B.Com
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="course" value="bsc"> B.Sc
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="course" value="ba"> B.A
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- seprating form from button -->
+                <div class="bottom-line"></div>
+
+                <!-- reset and submit button-->
+                <div class="btn-row">
+                    <button type="reset" class="reset-btn">Reset</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <div class="title title-footer">Professional Registration Form</div>
+
+</body>
+</html>
